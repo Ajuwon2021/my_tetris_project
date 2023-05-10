@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #0063A6;
+}
+
+body {
+  background-image: url(/images/bk.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+
+.main, footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 320px 185px 187px;
+  margin-top: 20px;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.score {
+  margin-top: 20px;
+  word-spacing: 10px;
+}
+
+.lines, .level {
+  word-spacing: 16px;
+}
+
+.piece-label {
+  margin-top: 10px;
+}
+
+.next, .hold {
+    margin-top: 20px;
+    width: 150px;
+    height: 100px;
+    background-color: rgba(128, 128, 120, 0.4);
+    padding-top: 30px;
+    padding-bottom: -30px;
+    padding: 5%;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 135px;
+}
+
+.game-board {
+  border: none;
+  background-color: rgba(128, 128, 120, 0.4);
+  height: 600px;
+  margin: auto;
+
+}
+
+.fa-solid {
+    width: 50px;
+}
+
+button {
+    border: none;
+}
+
+button i {
+  color: white;
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+button i:hover {
+    cursor: pointer;
+    color: #FB6522;
+}
+
+.fa-play {
+    margin-left: -15px;
+}
+
+.fa-music {
+    margin-left: 30px;
+}
+
+/*.play-button, .music-button {
+  border: none;
+  border-radius: 50%;
+  font-size: 12px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin: 15px 0px 0px 20px;
+  padding-top: 30px;
+}*/
+
+ul li {
+  color: #FD402D;
+  list-style: none;
+  margin-left: -10px;
+  text-transform: capitalize;
+  font-size: 15px;
+  line-height: 2;
+}
+
+h3 {
+  color: #fff;
+  margin-top: 45px;
+  margin-left: 10px;
+  padding-top: 10px;
+  font-size: 25px;
+}
+
+.up, .dwn, .right, .space, .esc {
+  margin-left: 30px;
+  font-size: large;
+  color: whitesmoke;
+}
+
+.rotate, .p {
+  margin-left: 60px;
+  color: whitesmoke;
+}
+
+.space {
+  font-size: small;
+  margin-left: 20px;
+}
+
+.footer {
+  color: #fff;
+}
+
+footer p {
+  width: 700px;
+  text-align: center;
+  margin: auto;
+  padding-top: 15px;
+}

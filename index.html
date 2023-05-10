@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="This is a Classic Tetris puzzle game">
+	<meta name="keywords" content="My Tetris Game, Tetris">
+	<meta name="author" content="Ajuwon Ayodeji Folarin">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="image/png" href="/images/logo.png">  
+
+    <title>My Tetris Game</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="grid">
+
+        <canvas id="board" class="game-board"></canvas>
+
+        <div class="left-column col-3">
+          <div>
+            <img src="./images/logo.jpg">
+            <p class="score">Score: <span id="score">0</span></p>
+            <p class="lines">Lines: <span id="lines">0</span></p>
+            <p class="level">Level: <span id="level">0</span></p>
+            <p class="piece-label">Next: </p>
+            <canvas id="next" class="next"></canvas>
+            <p class="piece-label">Hold: </p>
+            <canvas id="hold" class="hold"></canvas>
+          </div> 
+        </div>
+
+        <div class="right-column col-3">
+          <div>
+            <div class="container mt-3">
+              <div class="d-flex">
+                <div class="col-3">
+                  <span id="timer"></span>
+                  <button onclick="timer(this)" class="play-button">
+                        <i class="fa-sharp fa-solid fa-play"></i>
+                    </button>
+
+                  <button class="music-button" data-playing="false" role="switch" aria-checked="false">
+                    <i class="fa fa-music"></i>
+                    </button>
+
+                </div>
+              </div>
+            
+              <div class="instructions">   
+                <ul>
+                    <h3>Controls</h3>
+                  <li>move left: <span class="up">🡄</span></li>
+                  <li>move down: <span class="dwn">🡇</span></li>
+                  <li>Move right: <span class="right">🡆</span></li>
+                  <li>Rotate: <span class="rotate">🡅</span></li>
+                  <li>Hard Drop: <span class="space"><b>SPACE BAR</b></span></li>
+                  <li>Pause: <span class="p"><b>P</b></span></li>
+                  <li>End Game: <span class="esc"><b>ESC</b></span></li>
+                </ul>  
+              </div>
+            </div> 
+          </div>  
+        </div>
+      </div>
+    </div>
+  
+    <audio src='https://upload.wikimedia.org/wikipedia/commons/e/e5/Tetris_theme.ogg'></audio>
+
+    <footer class="footer">
+        <p>
+          Tetris © 1985~2023 Tetris Holding.
+          Tetris logos, Tetris theme song and Tetriminos
+          are trademarks of Tetris Holding.
+          The Tetris trade dress is owned by Tetris Holding.
+          Licensed to The Tetris Company. Tetris Game Design by Alexey Pajitnov.
+          Tetris Logo Design by Roger Dean. All Rights Reserved.
+        </p>
+    </footer>
+
+    <script type="text/javascript" src="variables.js"></script>
+    <script type="text/javascript" src="renderer.js"></script>
+    <script type="text/javascript" src="tetrominos.js"></script>
+    <script type="text/javascript" src="my_tetris.js"></script>
+    <script type="text/javascript" src="sound.js"></script>
+  </body>
+</html>
