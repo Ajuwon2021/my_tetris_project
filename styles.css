@@ -67,8 +67,7 @@ body {
 .game-board {
   border: none;
   background-color: rgba(128, 128, 120, 0.4);
-  height: 600px;
-  margin: auto;
+  height: 500px;
 
 }
 
@@ -151,5 +150,5 @@ footer p {
   width: 700px;
   text-align: center;
   margin: auto;
-  padding-top: 15px;
+  padding-top: 30px;
 }
